@@ -41,6 +41,7 @@ interface QRCode {
   getModuleCount() : number;
   isDark(row: number, col: number) : boolean;
   createImgTag(cellSize?: number, margin?: number) : string;
+  createBase64(cellSize?: number, margin?: number) : string;
   createSvgTag(cellSize?: number, margin?: number) : string;
   createTableTag(cellSize?: number, margin?: number) : string;
   renderTo2dContext(context: CanvasRenderingContext2D, cellSize?: number): void;
